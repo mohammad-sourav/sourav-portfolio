@@ -695,3 +695,58 @@ section {
 }
 
 
+/* HERO PORTRAIT - REFINED SIZE */
+
+.hero-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (max-width: 800px) {
+    .hero-image img {
+        height: 420px;
+    }
+}
+
+
+/* REDUCE ABOUT SECTION TOP SPACE */
+
+#about.section {
+    padding-top: 45px;
+}
+
+
+/* PREMIUM SECTION TITLE ACCENT */
+
+.section-title {
+    position: relative;
+    display: table;
+    padding-bottom: 14px;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 55px;
+    height: 3px;
+    border-radius: 5px;
+    background: linear-gradient(
+        90deg,
+        #B8955E,
+        #D5B98C
+    );
+}
